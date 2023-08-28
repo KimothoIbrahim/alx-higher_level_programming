@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-    """
-    comment section
-    """
 
 def magic_calculation(a, b):
     res = 0
