@@ -2,6 +2,7 @@
 
 """Define class 'Rectangle'"""
 
+
 class Rectangle:
     """Rep a rectangle"""
     pass
