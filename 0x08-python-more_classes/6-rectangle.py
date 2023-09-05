@@ -19,6 +19,7 @@ class Rectangle:
             width (int): width of triangle
             height (int): height of triangle
         """
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
