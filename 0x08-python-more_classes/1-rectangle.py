@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-
 """define class 'Rectangle'"""
 
 
 class Rectangle:
+    """Rep a rectangle"""
 
     def __init__(self, width=0, height=0):
-        """initialie new instance of rectangle
+
+        """
+        initialize new instance of rectangle
 
         Args:
             width (int): width of triangle
@@ -31,7 +33,7 @@ class Rectangle:
 
         @property
         def height(self):
-            """ set height of rect"""
+            """set height of rect"""
             return self.__height
 
         @height.setter
