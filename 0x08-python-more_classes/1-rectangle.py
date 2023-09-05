@@ -13,7 +13,6 @@ class Rectangle:
             width (int): width of triangle
             height (int): height of triangle
         """
-
         self.width = width
         self.height = height
 
