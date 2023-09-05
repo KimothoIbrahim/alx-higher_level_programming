@@ -3,7 +3,13 @@
 
 
 class Rectangle:
-    """Rep a rectangle"""
+    """Rep a rectangle
+
+    Attributes:
+        instances (int):  rect instance count
+    """
+
+    instances = 0
 
     def __init__(self, width=0, height=0):
 
@@ -74,5 +80,5 @@ class Rectangle:
 
     def __del__(self):
         """print a message for deletion of a rectangle"""
-        type(self).number_of_instances -= 1
+        type(self).instances -= 1
         print("Bye rectangle...")
