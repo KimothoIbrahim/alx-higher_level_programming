@@ -3,6 +3,10 @@
 
 
 def read_file(filename=""):
-    """Function herder"""
+    """function
+
+    Args:
+        filename (str): name of given file
+    """
     with open(filename, encoding="utf-8") as f:
         print(f.read(), end="")
