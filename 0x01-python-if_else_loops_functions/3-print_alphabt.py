@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-for leta in range(97, 123):
-    if chr(leta) is not 'q' and chr(leta) is not 'e':
-        print("{}".format(chr(leta)), end="")
 
+
+for i in range(97, 123):
+    if chr(i) != 'e' or chr(i) != 'q':
+        print("{:s}".format(chr(i)), end="")
