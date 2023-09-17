@@ -1,15 +1,17 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    """Using the SYS module"""
+
     import sys
 
-    counter = len(sys.argv) - 1
-    if counter == 0:
-        print("0 arguments.")
-    elif counter == 1:
-        print("1 argument:")
+    number = len(sys.argv)
+
+    if number - 1 == 1:
+        print(f"{number - 1} argument:")
+    elif number - 1 > 1:
+        print(f"{number - 1} arguments:")
     else:
-        print("{} arguments:".format(counter))
-    for i in range(counter):
-        print("{}: {}".format(i + 1, sys.argv[i + 1]))
+        print(f"{number - 1} arguments.")
+
+    for i in range(1, len(sys.argv)):
+        print(f"{i}: {sys.argv[i]}")
