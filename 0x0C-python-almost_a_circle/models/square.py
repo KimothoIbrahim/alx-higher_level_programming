@@ -32,7 +32,6 @@ class Square(Rectangle):
 
         Args:
             *args (ints): New attribute values.
-               
             **kwargs (dict): key/value pairs.
         """
         if args and len(args) != 0:
