@@ -4,4 +4,4 @@
 
 def lookup(obj):
     """return list of attribs"""
-    return (obj.__dict__)
+    return (dir(obj))
