@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""module prints a sorted list"""
 
 class MyList(list):
     """print a soted list"""
