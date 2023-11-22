@@ -1,16 +1,15 @@
 #!/usr/bin/python3
-"""Appending to files in python"""
+"""append text to a file"""
 
 
 def append_write(filename="", text=""):
-    """Append text to a provided file
+    """
+    function attaches 'text' to the file `filename`
 
     Args:
-        filename (str): file to write to
-        text (str): text to input to file
-
-    Returns:
-        number of characters added
+        filename (str): string to a file to be written
+        text (str): text to add to the file "filename"
     """
-    with open(filename, "a", encoding="utf-8") as f:
-        return f.write(text)
+
+    with open(filename, 'a', encoding="utf-8") as file:
+        return file.write(text)
