@@ -1,4 +1,4 @@
-#!/usr/binpython3
+#!/usr/bin/python3
 """script writes given text to a file"""
 
 
