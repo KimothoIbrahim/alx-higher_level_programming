@@ -1,29 +1,21 @@
 #!/usr/bin/python3
-"""Class Student."""
+"""defines a Class"""
 
 
 class Student:
-    """Student."""
 
     def __init__(self, first_name, last_name, age):
-        """Initialize new Student.
-
-        Args:
-            first_name (str): Student's first name.
-            last_name (str): Student's last name.
-            age (int): Student age.
-        """
+        """initialize a Student"""
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
-        """Get dictionary representation of Student.
+        if attrs is None:
+            return self.__dict__
 
-        Args:
-            attrs (list): Attributes to represent.
-        """
-        if (type(attrs) == list and
-                all(type(ele) == str for ele in attrs)):
-            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
-        return self.__dict__
+        for attr in attrs:
+            if type(attr) != str:
+                return self.__dict__
+
+        return {attr: self.__dict__[attr] for attr in attrs}
