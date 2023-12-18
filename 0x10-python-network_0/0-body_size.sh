@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/bin/bash
 # curl the argument provided as host and display body size
 
 if [ $# -eq 1 ]; then
