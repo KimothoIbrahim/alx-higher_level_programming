@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" """
+"""posts a request and prints response body"""
 
 if __name__ == "__main__":
     import sys
