@@ -10,12 +10,13 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         data = {'q': sys.argv[1]}
 
-    r = requests.post('http://0.0.0.0:5000/search_user', data=data)
-
     try:
-        r = r.json()
+        res = requests.post('http://0.0.0.0:5000/search_user', data=data)
+
+        r = res.json()
+
         if r:
-            print('', r.get('id'), r.get('name'))
+            print('[{}] {}'.format(r.get('id'), r.get('name')))
         else:
             print('No result')
     except requests.exceptions.JSONDecodeError:
