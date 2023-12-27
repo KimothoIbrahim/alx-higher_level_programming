@@ -11,4 +11,3 @@ if __name__ == "__main__":
 
     r = r.json()
     print(r.get('id'))
-
