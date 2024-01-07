@@ -11,4 +11,4 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1, 2, 3, 5]), 5)
 
     def test_errors(self):
-        self.assertRaises(TypeError, max_integer, {"key": 'my_dict'})
+        self.assertRaises(TypeError, max_integer, 19)
