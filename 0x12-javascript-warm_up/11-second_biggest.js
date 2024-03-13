@@ -5,7 +5,7 @@ const m = process.argv;
 function secondBiggest (n) {
   if (n[2]) {
     if (!n[3]) {
-      console.log('0');
+      console.log(0);
     } else {
       let y = Number(n[2]);
       for (let x = 2; x < n.length; x++) {
@@ -24,7 +24,7 @@ function secondBiggest (n) {
       console.log(z);
     }
   } else {
-    console.log('0');
+    console.log(0);
   }
 }
 
