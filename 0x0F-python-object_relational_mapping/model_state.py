@@ -1,6 +1,6 @@
 #!/usr/bin/pyhton3
 """script defining models/classes/tables for database"""
-from sqlalchemy.orm import declarative_base
+from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import String, Integer, Column
 
 
@@ -12,4 +12,4 @@ class State(Base):
 
     __tablename__ = "states"
     id = Column(Integer, primary_key=True)
-    name = Column("name", String(128), nullable=False)
+    name = Column(String(128), nullable=False)
