@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+""" create city table """
 from sqlalchemy import String, Integer, Column, ForeignKey
 from model_state import Base
 
