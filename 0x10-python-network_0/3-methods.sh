@@ -1,3 +1,4 @@
 #!/bin/bash
 #Display all allowed HTTP verbs
-curl -s -X OPTIONS "$1"
+val=$(curl -s -i -X OPTIONS "$1" | grep Allow | sed s/"Allow: "//)
+echo "$val"
