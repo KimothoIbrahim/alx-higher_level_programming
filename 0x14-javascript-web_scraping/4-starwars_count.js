@@ -8,7 +8,7 @@ request(url, (error, response, body) => {
     const info = JSON.parse(body);
     for (movie of info.results) {
       for (character of movie.characters) {
-        if (character == 'https://swapi-api.alx-tools.com/api/people/18/') {
+        if (character === 'https://swapi-api.alx-tools.com/api/people/18/') {
           count++;
         }
       }
