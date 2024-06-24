@@ -13,5 +13,5 @@ request(url, (error, response, body) => {
       ob[i] = count.length;
     }
     console.log(ob);
-  } else ( console.log(error););
+  } else (console.log(error));
 });
