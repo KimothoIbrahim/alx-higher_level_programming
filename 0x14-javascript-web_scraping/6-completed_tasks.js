@@ -10,10 +10,10 @@ request(url, (error, response, body) => {
 
     for (let i = 1; i < 11; i++) {
       const count = info.filter((todo) => { return todo.userId === i; });
-      if (count) {
+      if (count.length) {
         ob[i] = count.length;
       }
     }
     console.log(ob);
-  } else (console.log(error));
+  } else if (!error) { console.log(response.statusCode); } else { console.log(error); }
 });
