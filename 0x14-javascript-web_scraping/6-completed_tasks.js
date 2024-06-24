@@ -12,7 +12,6 @@ request(url, (error, response, body) => {
       const count = info.filter((todo) => { return todo.userId == i; });
       ob[i] = count.length;
     }
-
     console.log(ob);
-  }
+  } else ( console.log(error);)
 });
