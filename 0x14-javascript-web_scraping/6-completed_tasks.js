@@ -9,7 +9,7 @@ request(url, (error, response, body) => {
     const ob = {};
 
     for (let i = 1; i < 11; i++) {
-      const count = info.filter((todo) => { return todo.userId == i; });
+      const count = info.filter((todo) => { return todo.userId === i; });
       if (count) {
         ob[i] = count.length;
       }
